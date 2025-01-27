@@ -1,0 +1,34 @@
+C:\Users\haufa\hiwi-coreftry\venv3\Scripts\python.exe C:/Users/haufa/hiwi-coreftry/main.py
+01/27/2025 08:38:31 - INFO - 	 missing_keys: []
+01/27/2025 08:38:31 - INFO - 	 unexpected_keys: []
+01/27/2025 08:38:31 - INFO - 	 mismatched_keys: []
+01/27/2025 08:38:31 - INFO - 	 error_msgs: []
+01/27/2025 08:38:31 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+01/27/2025 08:38:31 - INFO - 	 Tokenize 1 inputs...
+01/27/2025 08:38:32 - WARNING - 	 Parameter 'function'=<function encode at 0x0000026DA9A96550> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+100%|██████████| 1/1 [00:00<00:00, 64.02ba/s]
+01/27/2025 08:38:32 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00, 10.67it/s]
+Coreference Clusters:
+[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
+01/27/2025 08:38:32 - INFO - 	 Tokenize 1 inputs...
+100%|██████████| 1/1 [00:00<00:00, 64.10ba/s]
+01/27/2025 08:38:33 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00, 12.80it/s]
+
+Resolved Text:
+John went to the park to meet John's friend, Sarah. his friend, Sarah had been waiting for John near the fountain. When John arrived, John waved to his friend, Sarah, and his friend, Sarah smiled back. They decided to walk around and talk about their plans for the weekend. John mentioned that John wanted to visit the new museum, and his friend, Sarah thought it was a great idea. As they walked, his friend, Sarah pointed out a group of ducks by the pond. "Look at a group of ducks by the pond!" his friend, Sarah exclaimed. John laughed and took a picture of a group of ducks by the pond to show John's sister later. John told his friend, Sarah that John's sister loves animals and would enjoy seeing a picture of the ducks. After spending some more time at the park, they said goodbye and promised to meet again soon. John felt happy about the day, and so did his friend, Sarah.
+01/27/2025 08:38:36 - INFO - 	 missing_keys: []
+01/27/2025 08:38:36 - INFO - 	 unexpected_keys: []
+01/27/2025 08:38:36 - INFO - 	 mismatched_keys: []
+01/27/2025 08:38:36 - INFO - 	 error_msgs: []
+01/27/2025 08:38:36 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+01/27/2025 08:38:36 - INFO - 	 Tokenize 1 inputs...
+100%|██████████| 1/1 [00:00<00:00, 63.97ba/s]
+01/27/2025 08:38:36 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00, 12.80it/s]
+[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
+[['John', 'his', 'him', 'he', 'he', 'John', 'he', 'John', 'his', 'He', 'his', 'John'], ['his friend, Sarah', 'She', 'her', 'she', 'Sarah', 'Sarah', 'she', 'his sister', 'Sarah', 'his sister', 'Sarah'], ['They', 'their', 'they', 'they'], ['visit', 'it'], ['a group of ducks by the pond', 'them', 'the ducks'], ['a picture of the ducks', 'the photo'], ['the park', 'the park']]
+7.147029
+
+Process finished with exit code 0
