@@ -1,34 +1,69 @@
-C:\Users\haufa\hiwi-coreftry\venv3\Scripts\python.exe C:/Users/haufa/hiwi-coreftry/main.py
-01/27/2025 08:38:31 - INFO - 	 missing_keys: []
-01/27/2025 08:38:31 - INFO - 	 unexpected_keys: []
-01/27/2025 08:38:31 - INFO - 	 mismatched_keys: []
-01/27/2025 08:38:31 - INFO - 	 error_msgs: []
-01/27/2025 08:38:31 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
-01/27/2025 08:38:31 - INFO - 	 Tokenize 1 inputs...
-01/27/2025 08:38:32 - WARNING - 	 Parameter 'function'=<function encode at 0x0000026DA9A96550> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
-100%|██████████| 1/1 [00:00<00:00, 64.02ba/s]
-01/27/2025 08:38:32 - INFO - 	 ***** Running Inference on 1 texts *****
-Inference: 100%|██████████| 1/1 [00:00<00:00, 10.67it/s]
-Coreference Clusters:
-[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
-01/27/2025 08:38:32 - INFO - 	 Tokenize 1 inputs...
-100%|██████████| 1/1 [00:00<00:00, 64.10ba/s]
-01/27/2025 08:38:33 - INFO - 	 ***** Running Inference on 1 texts *****
-Inference: 100%|██████████| 1/1 [00:00<00:00, 12.80it/s]
+# 1 - Text generiert von ChatGPT für Koreferenz
 
-Resolved Text:
-John went to the park to meet John's friend, Sarah. his friend, Sarah had been waiting for John near the fountain. When John arrived, John waved to his friend, Sarah, and his friend, Sarah smiled back. They decided to walk around and talk about their plans for the weekend. John mentioned that John wanted to visit the new museum, and his friend, Sarah thought it was a great idea. As they walked, his friend, Sarah pointed out a group of ducks by the pond. "Look at a group of ducks by the pond!" his friend, Sarah exclaimed. John laughed and took a picture of a group of ducks by the pond to show John's sister later. John told his friend, Sarah that John's sister loves animals and would enjoy seeing a picture of the ducks. After spending some more time at the park, they said goodbye and promised to meet again soon. John felt happy about the day, and so did his friend, Sarah.
-01/27/2025 08:38:36 - INFO - 	 missing_keys: []
-01/27/2025 08:38:36 - INFO - 	 unexpected_keys: []
-01/27/2025 08:38:36 - INFO - 	 mismatched_keys: []
-01/27/2025 08:38:36 - INFO - 	 error_msgs: []
-01/27/2025 08:38:36 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
-01/27/2025 08:38:36 - INFO - 	 Tokenize 1 inputs...
-100%|██████████| 1/1 [00:00<00:00, 63.97ba/s]
-01/27/2025 08:38:36 - INFO - 	 ***** Running Inference on 1 texts *****
-Inference: 100%|██████████| 1/1 [00:00<00:00, 12.80it/s]
-[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
 [['John', 'his', 'him', 'he', 'he', 'John', 'he', 'John', 'his', 'He', 'his', 'John'], ['his friend, Sarah', 'She', 'her', 'she', 'Sarah', 'Sarah', 'she', 'his sister', 'Sarah', 'his sister', 'Sarah'], ['They', 'their', 'they', 'they'], ['visit', 'it'], ['a group of ducks by the pond', 'them', 'the ducks'], ['a picture of the ducks', 'the photo'], ['the park', 'the park']]
 7.147029
 
-Process finished with exit code 0
+
+
+# 2 - Märchen: Hans im Glück   
+[https://www.gutenberg.org/files/2591/2591-h/2591-h.htm#link2H_4_0003]
+
+[['Some men', 'they', 'them', 'their', 'their'], ['all their geese', 'them', 'they', 'their', 'them', 'they', 'themselves', 'they', 'these lucky beings'], ['The world', 'the world', 'it'], ['One of these lucky beings', 'he', 'his', 'he', 'my', 'I', 'my', 'me', 'my', 'me', 'You', 'Hans', 'your', 'him', 'his', 'Hans', 'his', 'his', 'his', 'he', 'Hans', 'Hans', 'friend', 'you', 'he', 'I', 'I', 'my', 'my', 'you', 'you', 'you', 'you', 'you', 'my', 'Hans', 'you', 'me', 'I', 'you', 'you', 'you', 'Hans', 'him', 'you', 'your', 'Hans', 'he', 'himself', 'his', 'his', 'his', 'he', 'he', 'he', 'his', 'Hans', 'he', 'he', 'his', 'His', 'Hans', 'himself', 'his'], ['his master', 'Master', 'the master', 'he'], ['a lump of silver as big as his head', 'the piece of silver'], ['his pocket-handkerchief', 'it', 'it'], ['a man', 'he', 'he', 'his', 'he', 'he', 'the horseman', 'you', 'the horseman', 'I', 'my', 'me', 'the horseman'], ['this load to carry', 'it', 'it'], ['his head', 'my head'], ['his shoulder', 'my shoulder'], ['a capital horse', 'my horse', 'the horse', 'the horse', 'His horse', 'it'], ['the silver', 'that silver', 'the silver'], ['the whip', 'his whip'], ['a shepherd who was coming by, driving a cow', 'the shepherd'], ['a man', 'him', 'his'], ['a beast like this that stumbles and flings him off as if it would break his neck', 'it']]
+
+
+
+# 3 - UN Rede: Speech by Federal Chancellor Olaf Scholz at the 78th General Debate of the United Nations General Assembly New York, Tuesday, 19 September 2023   
+[https://new-york-un.diplo.de/un-en/2618622-2618622]
+
+[['joined', 'This step', 'The accession of the two German states'], ['the United Nations', 'the United Nations', 'the United Nations', 'our United Nations', 'the United Nations', 'UN', 'its', 'Only the United Nations', 'its', 'the United Nations', 'its', 'Our United Nations itself', 'itself', 'the United Nations', 'the United Nations itself', 'itself', 'it', 'the United Nations', 'the United Nations', 'the United Nations'], ['us Germans', 'We', 'our', 'all of us', 'we', 'we Germans', 'our', 'our', 'we', 'our', 'our', 'our', 'us'], ['return', 'this chance', 'this chance. The return', 'The return'], ['two German states', 'the two German states', 'both German states'], ['my', 'my', 'I', 'I', 'I', 'My', 'I', 'I', 'I', 'me', 'me', 'me', 'I', 'I', 'I', 'my', 'I', 'I', 'I', 'my', 'I', 'my'], ['fill', 'this'], ['the clear commitment of both German states to resolve conflicts without force', 'This'], ['the Federal Republic of Germany', 'the Federal Republic of Germany', 'its', 'Germany’s', 'Germany', 'Germany', 'Germany', 'Germany', 'its', 'we', 'our', 'We', 'our', 'Germany', 'Germany', 'Germany', 'We', 'Germany', 'we', 'Germany', 'We', 'Germany', 'our', 'Germany’s', 'we', 'we', 'we', 'us', 'our'], ['the renunciation of any form of revisionism, by recognising Germany’s new borders drawn after the Second World War as inviolable', 'this', 'it'], ['the Cold War', 'the Cold War'], ['we', 'our'], ['the world', 'the world', 'the world', 'the entire world', 'the globe', 'the world', 'the world', 'the world', 'the world'], ['are', 'That'], ['is', 'This'], ['50 years', '50 years'], ['has', 'That'], ['the G7 or the G20', 'they'], ['some', 'them'], ['a few', 'they'], ['All of us', 'All of us', 'our', 'all of us', 'we'], ['ensuring', 'this'], ['the sovereignty, territorial integrity and political independence of our countries', 'these rights'], ['the African and Asian states liberated from colonialism', 'their'], ['self-determination, territorial integrity, the sovereign equality of all states and a world without colonialism and imperialism', 'This'], ['these ideals', 'these principles', 'These principles'], ['our multipolar world', 'our multipolar world'], ['we all', 'us'], ['Europe', 'Europe'], ['gain', 'this economic development'], ['de‑couple', 'This'], ['producers of renewable energies', 'their'], ['today', 'today'], ['the industrialised countries as a whole', 'their'], ['hit', 'That'], ['believe', 'That'], ['Dubai', 'Dubai'], ['we', 'We'], ['the SDGs, the Sustainable Development Goals', 'the SDGs'], ['We', 'we', 'our'], ['we', 'our', 'our'], ['leading', 'That'], ['major investment', 'this investment'], ['the multilateral development banks', 'they'], ['reform', 'That', 'this reform'], ['Delhi', 'Delhi'], ['hybrid capital', 'this capital'], ['the World Bank', 'the World Bank'], ['the status quo', 'the status quo'], ['Ladies and gentlemen', 'ladies and gentlemen', 'you', 'Ladies and gentlemen'], ['are', 'that'], ['Secretary-General Guterres', 'Secretary-General António Guterres'], ['Artificial intelligence', 'it', 'it'], ['reflects', 'that'], ['a growing number of partners – including three of the permanent members –', 'they'], ['Africa', 'Africa'], ['Latin America', 'Latin America'], ['obstruct', 'that'], ['the Security Council', 'the Security Council', 'the UN Security Council', 'the Security Council'], ['the General Assembly', 'this Assembly of peace'], ['my thoughts', 'They'], ['the renewed military activities there', 'they'], ['their', 'their', 'their'], ['we all', 'ourselves'], ['the UN Charter', 'the UN Charter'], ['their country’s', 'Ukraine', 'Ukraine'], ['Russia’s war of aggression', 'this war', 'this war', 'it'], ['Russia’s', 'Moscow', 'Russia', 'Russia’s', 'Russia’s'], ['is', 'that'], ['Russia’s President', 'him', 'he'], ['end', 'that'], ['we – the states of the United Nations', 'our', 'we'], ['New York', 'New York'], ['see', 'this'], ['our colleague, the Ambassador of Kenya', 'he'], ['we', 'our'], ['Fellow delegates', 'all of you', 'you', 'you'], ['us all', 'our'], ['a promise every one of us made upon joining the United Nations, namely “to unite our strength to maintain international peace and security”', 'that promise']]
+
+
+
+# 4 - Artikel: How LA fires devastation will change the Grammys this year   [https://www.bbc.com/news/articles/c4g76x194jpo]
+
+[['the Grammys', 'the Grammy Awards', 'Grammys', 'the show', 'the ceremony itself', 'itself', 'the show', 'the show', 'the show', 'it', 'the show', 'the event', 'The show', 'the event', 'the Grammys', 'the show', 'the ceremony', 'the show', 'the awards', 'Grammys', 'the show', 'the show', 'the show', 'The Grammys', 'the Grammys', 'the music industrys biggest night', 'the show', 'It', 'the show', 'the Grammys'], ['yearThe week leading up to the Grammy Awards', 'It', 'this'], ['LA', 'Los Angeles', 'Los Angeles', 'its', 'the city', 'the citys', 'the city', 'the city of Los Angeles', 'LA', 'the city', 'LA', 'LA', 'Los Angeles', 'the city', 'Los Angeles', 'L.A.'], ['this yearThe', 'this year'], ['Twenty-nine people', 'the victims', 'their', 'the victims of the fire'], ['its most devastating fire disaster ever recorded', 'the fire'], ['The Recording Academy, which runs the show', 'Recording Academy', 'they', 'they', 'we'], ['Recording Academy CEO Harvey Mason Jr.', 'He', 'He', 'Mr Mason', 'I', 'Mr Mason', 'he', 'I'], ['services', 'it'], ['Grammy', 'Grammy'], ['hold', 'it'], ['a range of public officials', 'They'], ['the New York Times', 'the outlet', 'the New York Times'], ['the evening', 'the night'], ['music industry', 'the music industry', 'the music industrys', 'The industry', 'LAs music industry', 'the industry', 'the industry', 'The music industry', 'the music industry', 'the music industry'], ['I', 'Elyn Kazarian, a creative director in the music industry', 'me'], ['another big music event in the city', 'The FireAid concert, hosted in two LA arenas with more than two dozen musical acts'], ['Beyoncé and Taylor Swift', 'they'], ['Taylor Swift', 'Swift'], ['2010', 'that year'], ['Artists', 'their'], ['the BBC', 'the BBC', 'the BBC', 'the BBC'], ['COVID', 'COVID'], ['senior music writer for Variety, Steven J Horowitz', 'He', 'he', 'Mr Horowitz', 'I', 'Mr Horowitz'], ['the fires', 'the fires', 'the fires', 'the fires', 'the fires'], ['the COVID pandemic', 'It'], ['Artist Manager Dani Chavez', 'I', 'Chavez', 'I', 'I'], ['multiple musicians who lost their gear', 'their'], ['stylists who work in music who lost their houses, who had costumes and whatnot', 'their'], ['musicians who are born and raised in LA who lost their house', 'their'], ['new musicians', 'them'], ['being', 'It'], ['Spotifys event honouring the nominees for Best New Artist of the year', 'It', 'this years event', 'our annual Best New Artist party'], ['previous nominees', 'their'], ['Spotify', 'We', 'our', 'our'], ['a devastating period', 'it'], ['people', 'they'], ['have', 'that'], ['this one thing', 'It']]
+    
+
+
+# 5 - Wissenschaft: Multilingual coreference resolution as text generation   [https://aclanthology.org/2024.crac-1.11.pdf]
+
+[['a multilingual coreference resolution system DFKI-CorefGen submitted for the CRAC Shared Task 2024', 'the task', 'Our system', 'DFKI-CorefGen', 'It', 'it', 'it'], ['We', 'Our', 'We', 'We', 'our', 'We', 'We', 'Our', 'we', 'we', 'our', 'we', 'We', 'We', 'we', 'our', 'we', 'We', 'We'], ['the CRAC Shared Task 2024', 'CRAC 2024'], ['Coreference resolution', 'It'], ['large variability in size, domain, the definition of markables, annotation consistency, completeness and quality', 'these challenges'], ['many state-of-the-art (multilingual) coreference resolution systems', 'They'], ['large language models (LLMs)', 'They', 'they', 'their', 'them'], ['mT5-base', 'mT5-base', 'mT5-base', 'mT5-base', 'mT5-base', 'mT5-base', 'mT5-base', 'mT5-base'], ['multilingual coreference resolution', 'the task', 'the task', 'the task', 'the task', 'the same task', 'the task', 'the task', 'the task'], ['One of the seminal and most successful coreference resolution models', 'It', 'the T5 model', 'the model’s'], ['all spans in a document', 'These spans'], ['Some early experiments', 'They'], ['the "link-append" transition system based on mT5-xl, which is multilingual and was successfully tested on multiple languages', 'the latter category'], ['Our approach DFKI-CorefGen', 'it', 'our model', 'the model', 'it', 'the model', 'the model', 'its'], ['all mentions', 'them', 'them'], ['a piece of text', 'this text'], ['train', 'It'], ['the whole raw piece of text', 'this piece'], ['the baseline', 'the baseline'], ['This paper', 'this paper']]
+
+
+
+# Beispieloutput # 1
+
+C:\Users\haufa\hiwi-coreftry\venv3\Scripts\python.exe C:/Users/haufa/hiwi-coreftry/main.py
+02/02/2025 13:01:41 - INFO - 	 missing_keys: []
+02/02/2025 13:01:41 - INFO - 	 unexpected_keys: []
+02/02/2025 13:01:41 - INFO - 	 mismatched_keys: []
+02/02/2025 13:01:41 - INFO - 	 error_msgs: []
+02/02/2025 13:01:41 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+02/02/2025 13:01:41 - INFO - 	 Tokenize 1 inputs...
+02/02/2025 13:01:42 - WARNING - 	 Parameter 'function'=<function encode at 0x0000023E2BE43700> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+100%|██████████| 1/1 [00:00<?, ?ba/s]
+02/02/2025 13:01:42 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00,  9.15it/s]
+Koreferenz-Cluster:
+[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
+02/02/2025 13:01:42 - INFO - 	 Tokenize 1 inputs...
+100%|██████████| 1/1 [00:00<00:00, 63.97ba/s]
+02/02/2025 13:01:44 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00, 10.67it/s]
+
+Aufgelöster Text:
+John went to the park to meet John's friend, Sarah. his friend, Sarah had been waiting for John near the fountain. When John arrived, John waved to his friend, Sarah, and his friend, Sarah smiled back. They decided to walk around and talk about their plans for the weekend. John mentioned that John wanted to visit the new museum, and his friend, Sarah thought it was a great idea. As they walked, his friend, Sarah pointed out a group of ducks by the pond. "Look at a group of ducks by the pond!" his friend, Sarah exclaimed. John laughed and took a picture of a group of ducks by the pond to show John's sister later. John told his friend, Sarah that John's sister loves animals and would enjoy seeing a picture of the ducks. After spending some more time at the park, they said goodbye and promised to meet again soon. John felt happy about the day, and so did his friend, Sarah.
+02/02/2025 13:01:47 - INFO - 	 missing_keys: []
+02/02/2025 13:01:47 - INFO - 	 unexpected_keys: []
+02/02/2025 13:01:47 - INFO - 	 mismatched_keys: []
+02/02/2025 13:01:47 - INFO - 	 error_msgs: []
+02/02/2025 13:01:47 - INFO - 	 Model Parameters: 90.5M, Transformer: 82.1M, Coref head: 8.4M
+02/02/2025 13:01:47 - INFO - 	 Tokenize 1 inputs...
+100%|██████████| 1/1 [00:00<?, ?ba/s]
+02/02/2025 13:01:48 - INFO - 	 ***** Running Inference on 1 texts *****
+Inference: 100%|██████████| 1/1 [00:00<00:00, 16.01it/s]
+Koreferenz-Cluster (Indexbereiche):
+[[(0, 4), (30, 33), (74, 77), (102, 104), (114, 116), (224, 228), (244, 246), (413, 417), (466, 469), (484, 486), (503, 506), (656, 660)], [(30, 47), (49, 52), (126, 129), (135, 138), (283, 288), (334, 339), (398, 401), (466, 476), (492, 497), (503, 513), (698, 703)], [(152, 156), (195, 200), (321, 325), (605, 609)], [(257, 262), (297, 299)], [(352, 380), (391, 395), (448, 457)], [(435, 457), (551, 560)], [(13, 21), (595, 603)]]
+
+Koreferenz-Cluster (Text):
+[['John', 'his', 'him', 'he', 'he', 'John', 'he', 'John', 'his', 'He', 'his', 'John'], ['his friend, Sarah', 'She', 'her', 'she', 'Sarah', 'Sarah', 'she', 'his sister', 'Sarah', 'his sister', 'Sarah'], ['They', 'their', 'they', 'they'], ['visit', 'it'], ['a group of ducks by the pond', 'them', 'the ducks'], ['a picture of the ducks', 'the photo'], ['the park', 'the park']]

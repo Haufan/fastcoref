@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Hinweis:
 # - Verwende Python 3.9. und die beigelegte requirement.txt
 
@@ -8,7 +10,7 @@
 # Der Abschnitt, der die Logits für eine bestimmte Koreferenzbeziehung in as_clusters ausgibt, wurde auskommentiert,
 # da die Cluster an den jeweiligen Text angepasst werden müssten.
 
-# Es gibt fünf Beispieltexte, die jeweils unter chosen_text in Zeile 100 ausgewählt werden können.
+# Es gibt fünf Beispieltexte, die jeweils unter chosen_text in Zeile 102 ausgewählt werden können.
 
 
 
@@ -90,38 +92,38 @@ def as_clusters(text):
 
 if __name__ == "__main__":
 
-    # 1 - Text generiert von ChatGPT für Koreferent
+    # 1 - Text generiert von ChatGPT für Koreferenz
     # 2 - Märchen: Hans im Glück   [https://www.gutenberg.org/files/2591/2591-h/2591-h.htm#link2H_4_0003]
     # 3 - UN Rede: Speech by Federal Chancellor Olaf Scholz at the 78th General Debate of the United Nations General Assembly New York, Tuesday, 19 September 2023   [https://new-york-un.diplo.de/un-en/2618622-2618622]
     # 4 - Artikel: How LA fires devastation will change the Grammys this year   [https://www.bbc.com/news/articles/c4g76x194jpo]
     # 5 - Wissenschaft: Multilingual coreference resolution as text generation   [https://aclanthology.org/2024.crac-1.11.pdf]
 
     # Wähle den Text mit seiner jeweiligen Nummer
-    chosen_text = 1
+    chosen_text = 5
 
 
     text1 = 'John went to the park to meet his friend, Sarah. ' \
-          'She had been waiting for him near the fountain. ' \
-          'When he arrived, he waved to her, and she smiled back. ' \
-          'They decided to walk around and talk about their plans for the weekend. ' \
-          'John mentioned that he wanted to visit the new museum, and Sarah thought it was a great idea. ' \
-          'As they walked, Sarah pointed out a group of ducks by the pond. ' \
-          '"Look at them!" she exclaimed. ' \
-          'John laughed and took a picture of the ducks to show his sister later. ' \
-          'He told Sarah that his sister loves animals and would enjoy seeing the photo. ' \
-          'After spending some more time at the park, they said goodbye and promised to meet again soon. ' \
-          'John felt happy about the day, and so did Sarah.'
+            'She had been waiting for him near the fountain. ' \
+            'When he arrived, he waved to her, and she smiled back. ' \
+            'They decided to walk around and talk about their plans for the weekend. ' \
+            'John mentioned that he wanted to visit the new museum, and Sarah thought it was a great idea. ' \
+            'As they walked, Sarah pointed out a group of ducks by the pond. ' \
+            '"Look at them!" she exclaimed. ' \
+            'John laughed and took a picture of the ducks to show his sister later. ' \
+            'He told Sarah that his sister loves animals and would enjoy seeing the photo. ' \
+            'After spending some more time at the park, they said goodbye and promised to meet again soon. ' \
+            'John felt happy about the day, and so did Sarah.'
 
     text2 = 'HANS IN LUCK ' \
-          'Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster. The world may very likely not always think of them as they think of themselves, but what care they for the world? what can it know about the matter? ' \
-          'One of these lucky beings was neighbour Hans. Seven long years he had worked hard for his master. At last he said, ‘Master, my time is up; I must go home and see my poor mother once more: so pray pay me my wages and let me go.’ And the master said, ‘You have been a faithful and good servant, Hans, so your pay shall be handsome.’ Then he gave him a lump of silver as big as his head. ' \
-          'Hans took out his pocket-handkerchief, put the piece of silver into it, threw it over his shoulder, and jogged off on his road homewards. As he went lazily on, dragging one foot after another, a man came in sight, trotting gaily along on a capital horse. ‘Ah!’ said Hans aloud, ‘what a fine thing it is to ride on horseback! There he sits as easy and happy as if he was at home, in the chair by his fireside; he trips against no stones, saves shoe-leather, and gets on he hardly knows how.’ Hans did not speak so softly but the horseman heard it all, and said, ‘Well, friend, why do you go on foot then?’ ‘Ah!’ said he, ‘I have this load to carry: to be sure it is silver, but it is so heavy that I can’t hold up my head, and you must know it hurts my shoulder sadly.’ ‘What do you say of making an exchange?’ said the horseman. ‘I will give you my horse, and you shall give me the silver; which will save you a great deal of trouble in carrying such a heavy load about with you.’ ‘With all my heart,’ said Hans: ‘but as you are so kind to me, I must tell you one thing—you will have a weary task to draw that silver about with you.’ However, the horseman got off, took the silver, helped Hans up, gave him the bridle into one hand and the whip into the other, and said, ‘When you want to go very fast, smack your lips loudly together, and cry “Jip!”’ ' \
-          'Hans was delighted as he sat on the horse, drew himself up, squared his elbows, turned out his toes, cracked his whip, and rode merrily off, one minute whistling a merry tune, and another singing, ' \
-          '‘No care and no sorrow, ' \
-          'A fig for the morrow! ' \
-          'We’ll laugh and be merry, ' \
-          'Sing neigh down derry!’ ' \
-          'After a time he thought he should like to go a little faster, so he smacked his lips and cried ‘Jip!’ Away went the horse full gallop; and before Hans knew what he was about, he was thrown off, and lay on his back by the road-side. His horse would have run off, if a shepherd who was coming by, driving a cow, had not stopped it. Hans soon came to himself, and got upon his legs again, sadly vexed, and said to the shepherd, ‘This riding is no joke, when a man has the luck to get upon a beast like this that stumbles and flings him off as if it would break his neck...'
+            'Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster. The world may very likely not always think of them as they think of themselves, but what care they for the world? what can it know about the matter? ' \
+            'One of these lucky beings was neighbour Hans. Seven long years he had worked hard for his master. At last he said, ‘Master, my time is up; I must go home and see my poor mother once more: so pray pay me my wages and let me go.’ And the master said, ‘You have been a faithful and good servant, Hans, so your pay shall be handsome.’ Then he gave him a lump of silver as big as his head. ' \
+            'Hans took out his pocket-handkerchief, put the piece of silver into it, threw it over his shoulder, and jogged off on his road homewards. As he went lazily on, dragging one foot after another, a man came in sight, trotting gaily along on a capital horse. ‘Ah!’ said Hans aloud, ‘what a fine thing it is to ride on horseback! There he sits as easy and happy as if he was at home, in the chair by his fireside; he trips against no stones, saves shoe-leather, and gets on he hardly knows how.’ Hans did not speak so softly but the horseman heard it all, and said, ‘Well, friend, why do you go on foot then?’ ‘Ah!’ said he, ‘I have this load to carry: to be sure it is silver, but it is so heavy that I can’t hold up my head, and you must know it hurts my shoulder sadly.’ ‘What do you say of making an exchange?’ said the horseman. ‘I will give you my horse, and you shall give me the silver; which will save you a great deal of trouble in carrying such a heavy load about with you.’ ‘With all my heart,’ said Hans: ‘but as you are so kind to me, I must tell you one thing—you will have a weary task to draw that silver about with you.’ However, the horseman got off, took the silver, helped Hans up, gave him the bridle into one hand and the whip into the other, and said, ‘When you want to go very fast, smack your lips loudly together, and cry “Jip!”’ ' \
+            'Hans was delighted as he sat on the horse, drew himself up, squared his elbows, turned out his toes, cracked his whip, and rode merrily off, one minute whistling a merry tune, and another singing, ' \
+            '‘No care and no sorrow, ' \
+            'A fig for the morrow! ' \
+            'We’ll laugh and be merry, ' \
+            'Sing neigh down derry!’ ' \
+            'After a time he thought he should like to go a little faster, so he smacked his lips and cried ‘Jip!’ Away went the horse full gallop; and before Hans knew what he was about, he was thrown off, and lay on his back by the road-side. His horse would have run off, if a shepherd who was coming by, driving a cow, had not stopped it. Hans soon came to himself, and got upon his legs again, sadly vexed, and said to the shepherd, ‘This riding is no joke, when a man has the luck to get upon a beast like this that stumbles and flings him off as if it would break his neck...'
 
     text3 = 'Fifty years ago, almost to the day, two German states joined the United Nations: the then German Democratic Republic as the 133rd member and the Federal Republic of Germany as the 134th member. This step is of great importance to us Germans to this very day. For membership of the United Nations enabled my country – the instigator of terrible wars and horrific crimes – to return to the family of peace-loving nations. We are profoundly grateful for this chance. ' \
             'The return was not free of requirements. The accession of the two German states was preceded by a visionary policy of détente. The aim, as my predecessor – Federal Chancellor and Nobel Peace Prize laureate Willy Brandt – said here in New York 50 years ago was to “fill in the rifts of the Cold War”. Three things were essential for this. First of all, the clear commitment of both German states to resolve conflicts without force. This was laid down in the Basic Treaty between Bonn and East Berlin as well as in the treaties which the Federal Republic of Germany concluded with its eastern neighbours. The second prerequisite was the renunciation of any form of revisionism, by recognising Germany’s new borders drawn after the Second World War as inviolable. At the time, many people in West Germany were opposed to this. In retrospect, however, it proved to be the right decision. Finally, the third prerequisite was a foreign policy that did not ignore the realities of the Cold War. And which, at the same time, always remained focused on overcoming the status quo – that is to say, the confrontation between the blocs and thus also the unnatural division of Germany. ' \
